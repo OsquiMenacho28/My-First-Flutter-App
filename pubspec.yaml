@@ -1,0 +1,51 @@
+name: my_incredible_namer
+description: "A new Flutter project."
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.19.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  english_words: ^4.0.0
+  provider: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: fonts/Montserrat-Italic.ttf
+          style: italic
+        - asset: fonts/Montserrat-Light.ttf
+          weight: 300
+        - asset: fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: fonts/Montserrat-Regular.ttf
+          weight: 400
+        - asset: fonts/Montserrat-Thin.ttf
+          weight: 100
+    - family: FiraCode
+      fonts:
+        - asset: fonts/FiraCode-Bold.ttf
+          weight: 700
+        - asset: fonts/FiraCode-Light.ttf
+          weight: 300
+        - asset: fonts/FiraCode-Medium.ttf
+          weight: 500
+        - asset: fonts/FiraCode-Regular.ttf
+          weight: 400
