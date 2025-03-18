@@ -279,7 +279,7 @@ class FavoritesPage extends StatelessWidget {
     var favoritesSet = appState.favorites;
 
     return Scaffold(
-      backgroundColor: Colors.deepOrange.shade50,
+      backgroundColor: Colors.lightBlue.shade50,
       body: ListView(
         children: [
           FavoritesTitleCard(),
@@ -357,6 +357,17 @@ class FavoritesDataTable extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(bottom: 50.0),
         child: DataTable(
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.shade400,
+                blurRadius: 10.0,
+                spreadRadius: 5.0,
+                offset: Offset(5.0, 5.0),
+                blurStyle: BlurStyle.solid,
+              )
+            ],
+          ),
           border: TableBorder.all(
               color: Colors.blue.shade700,
               borderRadius: BorderRadius.circular(10.0)),
